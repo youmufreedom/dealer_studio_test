@@ -7,7 +7,11 @@ function App() {
   const [activeCard, setActiveCard] = useState(2);
 
   const handleCardClick = (id) => {
-    setActiveCard(id);
+    if (cardsData.some(card => card.id === id)) {
+      setActiveCard(id);
+    } else {
+      console.error(`Invalid card ID: ${id}`);
+    }
   };
 
   return (
