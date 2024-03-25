@@ -14,13 +14,12 @@
       right: 0;
       bottom: 0;
       left: 0;
-      background: rgba(0, 0, 0, 0.5); // A dark overlay for better readability
-      padding: 50px;
+      background: rgba(0, 0, 0, 0.5);
       color: white;
-      display: flex; // Enables flexbox
-      flex-direction: column; // Stack children vertically
-      justify-content: center; // Centers children along the main axis (vertically, in this case)
-      align-items: center; // Centers children along the cross axis (horizontally, in this case)
+      display: flex;
+      flex-direction: column; 
+      justify-content: center; 
+      align-items: center;
     }
 
     h1 {
@@ -47,12 +46,12 @@
   }
 
   .card-container {
-    max-width: 1200px; // 设置一个最大宽度，根据你的设计需要调整
-    margin: 0 auto; // 上下保持为0，左右自动，使得容器居中
-    padding: 0 20px; // 在容器内部左右各添加20px的内边距，根据需要调整
-    display: flex; // 使用Flexbox来布局内部的卡片
-    flex-wrap: wrap; // 允许卡片换行
-    justify-content: center; // 卡片在容器中水平居中
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center; 
 
     @media (max-width: 768px) {
       flex-direction: column;
@@ -60,7 +59,6 @@
       padding: 0 10px;
     }
   }
-  // ... other styles for card-container and cards
 }
 
 @media (max-width: 768px) {
