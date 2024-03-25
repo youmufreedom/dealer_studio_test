@@ -33,16 +33,7 @@ function App() {
       bodyText:
         "Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris...",
       extraContent: [
-        "Additional content exclusive to this card.",
-        "More content to make this card higher.",
-        "More content to make this card higher.",
-        "More content to make this card higher.",
-        "More content to make this card higher.",
-        "More content to make this card higher.",
-        "More content to make this card higher.",
-        "More content to make this card higher.",
-        "More content to make this card higher.",
-        "More content to make this card higher.",
+        "Additional content exclusive to this card. More content to make this card higher,More content to make this card higher"
       ],
     },
   ];
