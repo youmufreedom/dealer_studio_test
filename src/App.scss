@@ -1,0 +1,76 @@
+.app {
+  text-align: center;
+
+  .banner {
+    background: url("ford_ranger.jpg") center;
+    background-size: cover;
+    min-height: 350px;
+    height: 45vh;
+    position: relative;
+
+    .overlay {
+      position: absolute;
+      top: 0;
+      right: 0;
+      bottom: 0;
+      left: 0;
+      background: rgba(0, 0, 0, 0.5); // A dark overlay for better readability
+      padding: 50px;
+      color: white;
+      display: flex; // Enables flexbox
+      flex-direction: column; // Stack children vertically
+      justify-content: center; // Centers children along the main axis (vertically, in this case)
+      align-items: center; // Centers children along the cross axis (horizontally, in this case)
+    }
+
+    h1 {
+      margin-bottom: 20px;
+    }
+
+    p {
+      margin-bottom: 30px;
+    }
+
+    .contact-us {
+      padding: 10px 30px;
+      background-color: #0072d4;
+      color: white;
+      border: none;
+      border-radius: 20px;
+      cursor: pointer;
+      font-size: 1em;
+
+      &:hover {
+        background-color: #0056b3;
+      }
+    }
+  }
+
+  .card-container {
+    max-width: 1200px; // 设置一个最大宽度，根据你的设计需要调整
+    margin: 0 auto; // 上下保持为0，左右自动，使得容器居中
+    padding: 0 20px; // 在容器内部左右各添加20px的内边距，根据需要调整
+    display: flex; // 使用Flexbox来布局内部的卡片
+    flex-wrap: wrap; // 允许卡片换行
+    justify-content: center; // 卡片在容器中水平居中
+
+    @media (max-width: 768px) {
+      flex-direction: column;
+      align-items: center;
+      padding: 0 10px;
+    }
+  }
+  // ... other styles for card-container and cards
+}
+
+@media (max-width: 768px) {
+  // Responsive styles...
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+}

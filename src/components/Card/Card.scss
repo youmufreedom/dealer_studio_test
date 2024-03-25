@@ -1,0 +1,43 @@
+.card {
+  width: 25vh;
+  max-width: 300px;
+  margin: 40px 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  box-shadow: 0 8px 10px 2px rgba(0, 0, 0, 0.2);
+  border-radius: 10px;
+  cursor: pointer;
+  overflow: hidden;
+
+  &:hover {
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+  }
+
+  &.active {
+    border: 3px solid #0072d4;
+  }
+
+  &.regular {
+    height: auto;
+    aspect-ratio: 4 / 5;
+    margin: 40px 20px;
+    // max-width: 300px;
+    max-height: 300px;
+  }
+
+  &.extra {
+    min-height: 320px; // 确保动态高度卡片也有一个基础最小高度
+  }
+
+  @media (max-width: 768px) {
+    width: 80%;
+    margin: 20px 0;
+  }
+
+  .card-content {
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+  }
+}
