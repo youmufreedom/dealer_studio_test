@@ -62,8 +62,33 @@
 }
 
 @media (max-width: 768px) {
-  // Responsive styles...
+  .app {
+    .banner {
+      min-height: 250px;
+      height: 35vh;
+
+      h1 {
+        margin-bottom: 10px;
+        font-size: 1.5em;
+      }
+
+      p {
+        margin-bottom: 20px;
+        font-size: 0.9em;
+      }
+
+      .contact-us {
+        padding: 8px 20px;
+        font-size: 0.8em;
+      }
+    }
+
+    .card-container {
+      padding: 0 5px;
+    }
+  }
 }
+
 
 html,
 body {

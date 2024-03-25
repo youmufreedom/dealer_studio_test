@@ -11,3 +11,9 @@
     color: #696969;
   }
 }
+
+@media (max-width: 768px) {
+  .card-body {
+    font-size: 0.9em;
+  }
+}
