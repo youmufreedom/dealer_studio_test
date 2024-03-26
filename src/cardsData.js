@@ -16,8 +16,10 @@ const cardsData = [
     imageSrc: "brisbane.jpg",
     header: "Heading 3",
     bodyText: "Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua...",
+    extraContent: [
+      "Additional content exclusive to this card. More content to make this card higher,More content to make this card higher"
+    ],
   },
-  // ... other cards
 ];
 
 export default cardsData;

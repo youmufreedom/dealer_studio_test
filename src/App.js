@@ -4,14 +4,12 @@ import Card from "./components/Card/Card";
 import cardsData from './cardsData'; 
 
 function App() {
+  // Define state for active card
   const [activeCard, setActiveCard] = useState(2);
 
+  // Handler for card click
   const handleCardClick = (id) => {
-    if (cardsData.some(card => card.id === id)) {
-      setActiveCard(id);
-    } else {
-      console.error(`Invalid card ID: ${id}`);
-    }
+    setActiveCard(id);
   };
 
   return (
